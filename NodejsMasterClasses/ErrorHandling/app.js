@@ -3,8 +3,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-    // Intentionally throwing an error to simulate an uncaught exception
-    throw new Error(`Simulated uncaught exception in route handler on`);
+    res.send("Hello World");
 });
 
 const server = app.listen(8000, () => {
